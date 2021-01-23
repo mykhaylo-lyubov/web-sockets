@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Чатик 👨🏻‍💻</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="page">
+    <div class="users">
+      <p>Total number of users on-line:</p>
+      <p class="users-number">0</p>
+    </div>
+    <ul id="message-feed" class="feed"></ul>
+
+    <form id="message-editor" class="editor">
+      <input name="message" autocomplete="off" />
+      <button type="submit">Отправить</button>
+    </form>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
